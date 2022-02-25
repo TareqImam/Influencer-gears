@@ -2,6 +2,10 @@
 fonts
 ------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background: #F3F1FF;
@@ -16,6 +20,7 @@ common styles
 Header
 ------------ */
 nav{
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +108,12 @@ Popular collection
     padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 30px;
+}
+.grid-item{
+    padding: 20px;
+    box-shadow: 0 0 20px rgb(107, 107, 107);
+    border-radius: 5px;
 }
 .item-name{
     font-size: 28px;
